@@ -1,0 +1,27 @@
+<div class="form-inline">
+<h1 class="mr-auto">MemoApp</h1>
+<%= form_tag('/memo',method: :post) do %>
+  
+  <input type="text" name="content" maxlength='50' class="form-control">
+  <input type="submit" value="New Post" class="btn btn-light">
+  
+<% end %>
+</div>
+<div class="messages row">
+<% @posts.each do |post| %>
+   <div class="col-sm-3">
+    <ul class="content">
+     <li class="message">
+     <strong>
+      <%= post.content %>
+     </strong>
+      <ul>
+       <li class="btn">
+        <%= link_to 'edit',edit_memo_path(post), class: "btn btn-success" %> <%= link_to 'delete',memo_path(post.id),class: "btn btn-dark",method: :delete %>
+       </li>
+    </ul>
+   </li>
+  </ul>
+  </div>
+<% end %> 
+</div>

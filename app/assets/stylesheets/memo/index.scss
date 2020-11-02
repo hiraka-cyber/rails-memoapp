@@ -1,0 +1,54 @@
+// body {
+//     margin: 0;
+//     padding: 0;
+//    }
+   
+//    a {
+//     text-decoration: none;
+//     color: black;
+//    }
+   
+//    .header {
+//     display: inline-flex;
+//     justify-content: space-evenly;
+//     height: 50px;
+//     width: 100%;
+//     line-height: 50px;
+//     background-color: lavender;
+//     a:hover {
+//       color: red;
+//     }
+//    }
+   
+//    .messages {
+//     margin: 20px auto;
+//     max-width: 500px;
+//     padding: 10px;
+//     text-align: center;
+//     height: 300px;
+//     background-color: aliceblue;
+//     overflow: scroll;
+//     .content {
+//       margin: 15px auto;
+//       width: 80%;
+//       height: 40px;
+//     }
+//     .message {
+//       line-height: 40px;
+//       border: 1px solid lightgray;
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 0 10px;
+//       overflow: auto;
+//       .btn {
+//         font-size: 12px;
+//         line-height: 20px;
+//         .edit-btn:hover {
+//           color: blue;
+//         }
+//         .delete-btn:hover {
+//           color: red;
+//         }
+//       }
+//     }
+//    }

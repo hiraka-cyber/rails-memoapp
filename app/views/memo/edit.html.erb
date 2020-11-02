@@ -1,0 +1,7 @@
+<h1>Edit</h1>
+<%= @post.content %>
+<%= form_tag("/memo/#{@post.id}", method: :patch) do %>
+<input type="text" name="content" maxlength='50'>
+<input type="submit" value="Edit">
+<% end %>
+<%= link_to 'Top','/' %>
